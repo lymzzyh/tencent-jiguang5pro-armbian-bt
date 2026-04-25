@@ -1,0 +1,4 @@
+# Keep repository small and reproducible.
+.DS_Store
+*.swp
+*.tmp

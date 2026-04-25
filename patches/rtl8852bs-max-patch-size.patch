@@ -1,0 +1,19 @@
+diff --git a/uart/rtk_hciattach/hciattach_rtk.c b/uart/rtk_hciattach/hciattach_rtk.c
+index 24f4c44..c89b059 100644
+--- a/uart/rtk_hciattach/hciattach_rtk.c
++++ b/uart/rtk_hciattach/hciattach_rtk.c
+@@ -1898,12 +1898,12 @@ static int rtb_config(int fd, int proto, int speed, struct termios *ti)
+ 		break;
+ 	case CHIP_8852AS:
+ 	case CHIP_8723FS:
+-	case CHIP_8852BS:
+ 	case CHIP_8852BP:
+ 		max_patch_size = 40 * 1024 + 529;
+ 		break;
++	case CHIP_8852BS:
+ 	case CHIP_8852CS:
+-		max_patch_size = 76 * 1024 + 529;
++		max_patch_size = 128 * 1024;
+ 		break;
+ 	default:
+ 		max_patch_size = 24 * 1024;
