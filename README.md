@@ -12,6 +12,14 @@ The Bluetooth part on this board is handled as:
 - Bluetooth protocol: Realtek H5 / three-wire
 - Firmware/config names: `rtl8852bs_fw`, `rtl8852bs_config`
 
+## How to use
+
+Just
+
+```bash
+curl 'https://raw.githubusercontent.com/lymzzyh/tencent-jiguang5pro-armbian-bt/refs/heads/main/scripts/install_rtl8852bs_bt_uart9.sh' | TTY_DEV=/dev/ttyS9 INIT_SPEED=115200 PROTO=rtk_h5 bash
+```
+
 ## What is included
 
 ```text
